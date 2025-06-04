@@ -3,27 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ludarian</title>
   <style>
-    /* Ensure page has no margins and fills the screen */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      overflow: hidden;
-    }
-
-    /* Make the image cover the entire viewport, cropping if necessary */
-    img {
+    html, body { margin: 0; height: 100%; overflow: hidden; }
+    img { 
+      display: block;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
-      display: block;
+      object-fit: cover;  /* makes it fill the entire screen */
     }
   </style>
 </head>
 <body>
-  <!-- Your PNG will now fill the screen -->
   <img src="ludarian.png" alt="Ludarian Logo">
 </body>
 </html>
