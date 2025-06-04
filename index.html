@@ -5,26 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ludarian</title>
   <style>
-    /* Remove any default margins and make body fill the viewport */
+    /* Ensure page has no margins and fills the screen */
     html, body {
       margin: 0;
+      padding: 0;
       height: 100vh;
-      background: #000;               /* Black background behind the PNG */
-      display: flex;
-      align-items: center;            /* Vertical centering */
-      justify-content: center;        /* Horizontal centering */
+      overflow: hidden;
     }
 
-    /* Make the image scale to at most the viewport’s size */
+    /* Make the image cover the entire viewport, cropping if necessary */
     img {
-      max-width: 100vw;
-      max-height: 100vh;
-      height: auto;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <!-- The only element on the page is your PNG -->
+  <!-- Your PNG will now fill the screen -->
   <img src="ludarian.png" alt="Ludarian Logo">
 </body>
 </html>
