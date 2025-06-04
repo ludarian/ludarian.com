@@ -5,24 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ludarian</title>
   <style>
-    /* Center the image both vertically and horizontally */
+    /* Remove any default margins and make body fill the viewport */
     html, body {
       margin: 0;
-      height: 100%;
-    }
-    body {
+      height: 100vh;
+      background: #000;               /* Black background behind the PNG */
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: center;            /* Vertical centering */
+      justify-content: center;        /* Horizontal centering */
     }
+
+    /* Make the image scale to at most the viewport’s size */
     img {
-      max-width: 100%;
+      max-width: 100vw;
+      max-height: 100vh;
       height: auto;
     }
   </style>
 </head>
 <body>
-  <!-- Show only the PNG -->
+  <!-- The only element on the page is your PNG -->
   <img src="ludarian.png" alt="Ludarian Logo">
 </body>
 </html>
